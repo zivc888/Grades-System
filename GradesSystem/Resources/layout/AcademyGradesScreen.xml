@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA: 0"
+        android:id="@+id/tv_GPA"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:fontFamily="serif"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academic Credit: 0"
+        android:id="@+id/tv_credit"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+    />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses:"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:fontFamily="serif"
+    />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/explv_semesters"
+        android:layout_marginHorizontal="20dp"
+    />
+    <Button
+        android:id="@+id/btn_SemesterAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="1dp"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:text="+ Add Semester"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fff69212"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:text="Refresh"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#ff88aa"
+        android:gravity="center"/>
+</LinearLayout>
