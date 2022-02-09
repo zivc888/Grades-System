@@ -5,20 +5,21 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:gravity="center_horizontal">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
 
         <TextView
             android:id="@+id/tv_CourseName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:text="Name"
             android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
             android:textColor="#fff69212"
@@ -30,8 +31,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:text="Grade"
             android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
             android:textColor="#fff69212"
@@ -43,8 +42,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:text="Credit"
             android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
             android:textColor="#fff69212"
@@ -57,8 +54,6 @@
             android:layout_height="wrap_content"
             android:longClickable="false"
             android:textSize="16dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:text="Edit"
             android:textAllCaps="false"
             android:layout_marginLeft="?android:attr/expandableListPreferredChildPaddingLeft"
@@ -67,25 +62,5 @@
             android:background="#ffffffff" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
-        <Button
-            android:id="@+id/btn_CourseAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:longClickable="false"
-            android:textSize="16dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:text="+ Add Course"
-            android:textAllCaps="false"
-            android:layout_marginLeft="?android:attr/expandableListPreferredChildPaddingLeft"
-            android:textColor="#fff69212"
-            android:textStyle="bold"
-            android:background="#ffffffff" />
-    </LinearLayout>
+
 </LinearLayout>

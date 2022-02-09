@@ -18,7 +18,9 @@ namespace GradesSystem
         Activity context;
         private List<string> Semesters;
         private Dictionary<string, List<Course>> Courses;
+
         Android.App.Dialog EditCourseDialog;
+
 
         public AcademyGradesListAdapter(Activity context, List<string> semesters, Dictionary<string, List<Course>> courses)
         {
@@ -40,10 +42,12 @@ namespace GradesSystem
         public override View GetChildView(int groupPosition, int childPosition, bool isLastChild, View convertView, ViewGroup parent)
         {
             Course child = (Course)GetChild(groupPosition, childPosition);
+
             if (convertView == null)
             {
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.AcademyGradesListItem, null);
             }
+
             TextView name = (TextView)convertView.FindViewById(Resource.Id.tv_CourseName);
             name.Text = child.Name + "";
             TextView grade = (TextView)convertView.FindViewById(Resource.Id.tv_CourseGrade);
@@ -56,7 +60,7 @@ namespace GradesSystem
             {
                 EditCourseDialog = new Android.App.Dialog(context);
                 EditCourseDialog.SetContentView(Resource.Layout.EditCourseDialog);
-                EditCourseDialog.SetTitle("Login");
+                EditCourseDialog.SetTitle("Edit Course");
                 EditCourseDialog.SetCancelable(true);
                 EditText newname = EditCourseDialog.FindViewById<EditText>(Resource.Id.et_name);
                 EditText newgrade = EditCourseDialog.FindViewById<EditText>(Resource.Id.et_grade);
@@ -65,18 +69,18 @@ namespace GradesSystem
 
                 save.Click += (object sender, EventArgs e) =>
                 {
-                    Toast.MakeText(context, "saved", ToastLength.Short).Show();
-                    child.Name = newname.Text;
-                    child.Grade = int.Parse(newgrade.Text);
-                    child.Credit = double.Parse(newcredit.Text);
+                    
+                    if(newname.Text == "" || newgrade.Text == "" || newcredit.Text == "") { Toast.MakeText(context, "error", ToastLength.Short).Show(); }
+                    else
+                    {
+                        Toast.MakeText(context, "saved", ToastLength.Short).Show();
+                        child.Name = newname.Text;
+                        child.Grade = int.Parse(newgrade.Text);
+                        child.Credit = double.Parse(newcredit.Text);
+                    }
+                    NotifyDataSetChanged();
                 };
                 EditCourseDialog.Show();
-            };
-
-            Button add = (Button)convertView.FindViewById(Resource.Id.btn_CourseAdd);
-            add.Click += (object sender, EventArgs e) =>
-            {
-                Courses[Semesters[groupPosition]].Add(new Course("new course"));
             };
 
             return convertView;

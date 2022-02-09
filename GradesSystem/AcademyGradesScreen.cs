@@ -17,6 +17,7 @@ namespace GradesSystem
     {
         TextView GPA, academic_credit;
         Button AddSemester, refresh;
+        Android.App.Dialog DefineSemesterDialog;
 
         AcademyGradesListAdapter Adapter;
         ExpandableListView SemestersListView;
@@ -72,10 +73,34 @@ namespace GradesSystem
 
         private void AddSemester_Click(object sender, EventArgs e)
         {
-            Semesters.Add("" + (++n));
             var lst = new List<Course>();
-            lst.Add(new Course("new course"));
-            Courses.Add(Semesters[(Adapter.GroupCount) - 1], lst);
+
+            DefineSemesterDialog = new Android.App.Dialog(this);
+            DefineSemesterDialog.SetContentView(Resource.Layout.SemesterCourseNumberDialog);
+            DefineSemesterDialog.SetTitle("Define Semester");
+            DefineSemesterDialog.SetCancelable(true);
+            EditText name = DefineSemesterDialog.FindViewById<EditText>(Resource.Id.et_name);
+            EditText num = DefineSemesterDialog.FindViewById<EditText>(Resource.Id.et_course_num);
+            Button save = DefineSemesterDialog.FindViewById<Button>(Resource.Id.btn_SaveCourse);
+
+            save.Click += (object sender, EventArgs e) =>
+            {
+
+                if (name.Text == "" || num.Text == "") { Toast.MakeText(this, "error", ToastLength.Short).Show(); }
+                else
+                {
+                    Toast.MakeText(this, "saved", ToastLength.Short).Show();
+                    Semesters.Add("" + name.Text);
+
+                    for (int i = 0; i < int.Parse(num.Text); i++)
+                    {
+                        lst.Add(new Course("course " + (i+1)));
+                    }
+                    Courses.Add(Semesters[(Adapter.GroupCount) - 1], lst);
+                }
+            };
+            DefineSemesterDialog.Show();
+
 
             Adapter = new AcademyGradesListAdapter(this, Semesters, Courses);
             SemestersListView.SetAdapter(Adapter);

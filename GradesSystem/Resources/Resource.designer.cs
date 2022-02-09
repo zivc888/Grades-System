@@ -3581,125 +3581,125 @@ namespace GradesSystem
 			// aapt resource value: 0x7F080047
 			public const int browser_actions_menu_view = 2131230791;
 			
-			// aapt resource value: 0x7F08004C
-			public const int btn_academy = 2131230796;
+			// aapt resource value: 0x7F08004B
+			public const int btn_academy = 2131230795;
 			
-			// aapt resource value: 0x7F08004D
-			public const int btn_contact = 2131230797;
+			// aapt resource value: 0x7F08004C
+			public const int btn_contact = 2131230796;
 			
 			// aapt resource value: 0x7F080048
-			public const int btn_CourseAdd = 2131230792;
+			public const int btn_CourseEdit = 2131230792;
 			
-			// aapt resource value: 0x7F080049
-			public const int btn_CourseEdit = 2131230793;
+			// aapt resource value: 0x7F08004D
+			public const int btn_grades = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
-			public const int btn_grades = 2131230798;
+			public const int btn_refresh = 2131230798;
+			
+			// aapt resource value: 0x7F080049
+			public const int btn_SaveCourse = 2131230793;
 			
 			// aapt resource value: 0x7F08004F
-			public const int btn_refresh = 2131230799;
+			public const int btn_school = 2131230799;
 			
 			// aapt resource value: 0x7F08004A
-			public const int btn_SaveCourse = 2131230794;
+			public const int btn_SemesterAdd = 2131230794;
 			
 			// aapt resource value: 0x7F080050
-			public const int btn_school = 2131230800;
-			
-			// aapt resource value: 0x7F08004B
-			public const int btn_SemesterAdd = 2131230795;
+			public const int btn_summaries = 2131230800;
 			
 			// aapt resource value: 0x7F080051
-			public const int btn_summaries = 2131230801;
+			public const int buttonPanel = 2131230801;
 			
 			// aapt resource value: 0x7F080052
-			public const int buttonPanel = 2131230802;
+			public const int center = 2131230802;
 			
 			// aapt resource value: 0x7F080053
-			public const int center = 2131230803;
+			public const int center_horizontal = 2131230803;
 			
 			// aapt resource value: 0x7F080054
-			public const int center_horizontal = 2131230804;
+			public const int center_vertical = 2131230804;
 			
 			// aapt resource value: 0x7F080055
-			public const int center_vertical = 2131230805;
+			public const int checkbox = 2131230805;
 			
 			// aapt resource value: 0x7F080056
-			public const int checkbox = 2131230806;
+			public const int @checked = 2131230806;
 			
 			// aapt resource value: 0x7F080057
-			public const int @checked = 2131230807;
+			public const int chronometer = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int chronometer = 2131230808;
+			public const int clip_horizontal = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int clip_horizontal = 2131230809;
+			public const int clip_vertical = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int clip_vertical = 2131230810;
+			public const int collapseActionView = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int collapseActionView = 2131230811;
+			public const int container = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int container = 2131230812;
+			public const int content = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int content = 2131230813;
+			public const int contentPanel = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int contentPanel = 2131230814;
-			
-			// aapt resource value: 0x7F08005F
-			public const int coordinator = 2131230815;
+			public const int coordinator = 2131230814;
 			
 			// aapt resource value: 0x7F080001
 			public const int CTRL = 2131230721;
 			
+			// aapt resource value: 0x7F08005F
+			public const int custom = 2131230815;
+			
 			// aapt resource value: 0x7F080060
-			public const int custom = 2131230816;
+			public const int customPanel = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int customPanel = 2131230817;
+			public const int decor_content_parent = 2131230817;
 			
 			// aapt resource value: 0x7F080062
-			public const int decor_content_parent = 2131230818;
+			public const int default_activity_button = 2131230818;
 			
 			// aapt resource value: 0x7F080063
-			public const int default_activity_button = 2131230819;
+			public const int design_bottom_sheet = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int design_bottom_sheet = 2131230820;
+			public const int design_menu_item_action_area = 2131230820;
 			
 			// aapt resource value: 0x7F080065
-			public const int design_menu_item_action_area = 2131230821;
+			public const int design_menu_item_action_area_stub = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int design_menu_item_action_area_stub = 2131230822;
+			public const int design_menu_item_text = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int design_menu_item_text = 2131230823;
+			public const int design_navigation_view = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int design_navigation_view = 2131230824;
+			public const int dialog_button = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int dialog_button = 2131230825;
+			public const int disableHome = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int disableHome = 2131230826;
+			public const int edit_query = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
-			public const int edit_query = 2131230827;
+			public const int end = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int end = 2131230828;
+			public const int enterAlways = 2131230828;
 			
 			// aapt resource value: 0x7F08006D
-			public const int enterAlways = 2131230829;
+			public const int enterAlwaysCollapsed = 2131230829;
 			
 			// aapt resource value: 0x7F08006E
-			public const int enterAlwaysCollapsed = 2131230830;
+			public const int et_course_num = 2131230830;
 			
 			// aapt resource value: 0x7F08006F
 			public const int et_credit = 2131230831;
@@ -4452,7 +4452,10 @@ namespace GradesSystem
 			public const int select_dialog_singlechoice_material = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int support_simple_spinner_dropdown_item = 2131427390;
+			public const int SemesterCourseNumberDialog = 2131427390;
+			
+			// aapt resource value: 0x7F0B003F
+			public const int support_simple_spinner_dropdown_item = 2131427391;
 			
 			static Layout()
 			{
