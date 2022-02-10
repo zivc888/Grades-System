@@ -64,12 +64,14 @@
     <Compile Include="AcademyGradesListAdapter.cs" />
     <Compile Include="AcademyGradesScreen.cs" />
     <Compile Include="Assignment.cs" />
+    <Compile Include="BagrutGradesScreen.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="GradesBaseClass.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainGradesScreen.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolGradesScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -127,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SemesterCourseNumberDialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SchoolGradesScreen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\BagrutGradesScreen.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

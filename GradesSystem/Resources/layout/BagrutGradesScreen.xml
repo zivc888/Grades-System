@@ -6,13 +6,13 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:layoutDirection="ltr"
-    android:background="#ffffaa">
+    android:background="#77aa77">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GPA: 0"
-        android:id="@+id/tv_GPA"
+        android:text="Average: 0"
+        android:id="@+id/tv_average"
         android:textAllCaps="false"
         android:textSize="40dp"
         android:fontFamily="serif"
@@ -21,8 +21,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Academic Credit: 0"
-        android:id="@+id/tv_credit"
+        android:text="Study Units: 0"
+        android:id="@+id/tv_units"
         android:textAllCaps="false"
         android:textSize="25dp"
         android:fontFamily="serif"
@@ -32,7 +32,7 @@
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Courses:"
+        android:text="Bagruts:"
         android:textAllCaps="false"
         android:textSize="40dp"
         android:fontFamily="serif"
@@ -41,18 +41,18 @@
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/explv_semesters"
+        android:id="@+id/explv_bagruts"
         android:layout_marginHorizontal="20dp"
     />
     <Button
-        android:id="@+id/btn_SemesterAdd"
+        android:id="@+id/btn_BagrutAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="1dp"
         android:textSize="16dp"
         android:padding="5dp"
-        android:text="+ Add Semester"
+        android:text="+ Add Bagrut"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textStyle="bold"

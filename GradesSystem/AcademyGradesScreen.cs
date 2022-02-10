@@ -23,7 +23,7 @@ namespace GradesSystem
         ExpandableListView SemestersListView;
         List<string> Semesters;
         Dictionary<string, List<Course>> Courses;
-        int previousGroup = -1, n = 0;
+        int previousGroup = -1;
 
         double AverageWeighted = 0, credit = 0;
 
@@ -67,7 +67,7 @@ namespace GradesSystem
             if (credit != 0) { AverageWeighted /= credit; }
             else { AverageWeighted = 0; }
 
-            GPA.Text = "GPA: " + AverageWeighted;
+            GPA.Text = "GPA: " + Math.Round(AverageWeighted,2);
             academic_credit.Text = "Academic Credit: " + credit;
         }
 
@@ -123,40 +123,5 @@ namespace GradesSystem
             //Listening to group collapse
             SemestersListView.GroupCollapse += delegate (object sender, ExpandableListView.GroupCollapseEventArgs e) { };
         }
-
-        /*
-        void FnGetListData()
-        {
-            // Adding child data
-            Semesters[0] = "Winter 2019/20";
-            Semesters[1] = "Spring 2020";
-            Semesters[2] = "Summer 2020";
-
-            // Adding child data
-            var lst1 = new Course[0];
-
-            var Biology1_Assignments = new Assignment[6];
-            Biology1_Assignments[0] = new Assignment(100, 4, "HW1");
-            Biology1_Assignments[1] = new Assignment(100, 4, "HW2");
-            Biology1_Assignments[2] = new Assignment(100, 4, "HW3");
-            Biology1_Assignments[3] = new Assignment(85, 4, "HW4");
-            Biology1_Assignments[4] = new Assignment(100, 4, "HW5");
-            Biology1_Assignments[5] = new Assignment(90, 80, "Test");
-            lst1[0] = new Course(Biology1_Assignments, 91, "Biology 1", 3);
-
-            var lst2 = new Course[0];
-            //lst2[0] = new Course(Biology1_Assignments, 91, "Biology 2", 3);
-
-            var lst3 = new Course[0];
-            //lst3[0] = new Course(Biology1_Assignments, 91, "Biology 3", 3);
-
-
-            // Header, Child data
-            Courses.Add(Semesters[0], lst1);
-            Courses.Add(Semesters[1], lst2);
-            Courses.Add(Semesters[2], lst3);
-            
-        }
-    */
     }
 }

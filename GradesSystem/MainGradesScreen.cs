@@ -37,7 +37,8 @@ namespace GradesSystem
 
         private void School_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Intent i = new Intent(this, typeof(SchoolGradesScreen));
+            StartActivity(i);
         }
     }
 }

@@ -6,36 +6,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ddaacc">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_grades"
-        android:text="Grades"
+        android:text="Grades System"
         android:textAllCaps="false"
-        android:textSize="40dp"
+        android:textSize="50dp"
         android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_grades"
+            android:text="Grades"
+            android:textAllCaps="false"
+            android:textSize="40dp"
+            android:fontFamily="serif"
         />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_summaries"
-        android:text="Summaries"
-        android:textAllCaps="false"
-        android:textSize="40dp"
-        android:fontFamily="serif"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_summaries"
+            android:text="Summaries"
+            android:textAllCaps="false"
+            android:textSize="40dp"
+            android:fontFamily="serif"
         />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_contact"
-        android:text="Contact"
-        android:textAllCaps="false"
-        android:textSize="40dp"
-        android:fontFamily="serif"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_contact"
+            android:text="Contact"
+            android:textAllCaps="false"
+            android:textSize="40dp"
+            android:fontFamily="serif"
         />
-
+    </LinearLayout>
 </LinearLayout>
